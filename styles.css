@@ -1,3 +1,7 @@
+:root {
+    dark-green: #365C35;
+}
+
 body {
     max-width: 1440px;
     margin: auto;
