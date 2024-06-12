@@ -1,4 +1,14 @@
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
 .logo {
     width: 100px;
     display: block;
+}
+
+.stage {
+    background-image: url("/img/tennis-5018589_1280.jpg");
+    min-height: 600px; 
 }
