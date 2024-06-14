@@ -4,6 +4,7 @@
     --green: #9ABB0E;
     --yellow: #FCFF64;
     --orange: #FFD15C;
+    --logo-width: 100px;
 }
 
 nav, main {
@@ -11,8 +12,18 @@ nav, main {
     margin: auto;
 }
 
+nav{
+    display: grid;
+    grid-template-columns: var(--logo-width) 1fr;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+}
+
 .logo {
-    width: 100px;
+    width: var(--logo-width);
     display: block;
 }
 
