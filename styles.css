@@ -5,6 +5,7 @@
     --yellow: #FCFF64;
     --orange: #FFD15C;
     --logo-width: 100px;
+    --section-height: 600px;
 }
 
 nav, main {
@@ -29,7 +30,7 @@ nav ul {
 
 .stage {
     background-image: url("/img/tennis-5018589_1280.jpg");
-    min-height: 600px; 
+    min-height: var(--section-height); 
 }
 footer {
     min-height: 120px;
