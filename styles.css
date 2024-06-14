@@ -6,6 +6,11 @@
     --orange: #FFD15C;
     --logo-width: 100px;
     --section-height: 600px;
+    --rounded-corner: 2rem;
+}
+
+img {
+    width: 100%;
 }
 
 nav, main {
@@ -13,7 +18,7 @@ nav, main {
     margin: auto;
 }
 
-nav{
+nav {
     display: grid;
     grid-template-columns: var(--logo-width) 1fr;
 }
@@ -21,17 +26,33 @@ nav{
 nav ul {
     display: flex;
     margin-left: auto;
+    min-width: 5rem;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--darker-green);
+    padding: 1rem 2rem;
+    border-radius: var(--rounded-corner);
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: var(--orange);
 }
 
 .logo {
     width: var(--logo-width);
-    display: block;
+    display: flex;
 }
 
 .stage {
     background-image: url("/img/tennis-5018589_1280.jpg");
     min-height: var(--section-height); 
 }
+
 footer {
     min-height: 120px;
     border-top: 1px solid black;
