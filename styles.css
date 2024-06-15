@@ -15,8 +15,17 @@ html {
 
 section {
     display: grid;
+    column-gap: 2rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.75rem;
 }
 
 .split-column {
@@ -36,6 +45,8 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-image: url("/img/tennis-5018589_1280.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('/img/tennis-5018589_1280.jpg');
+
     min-height: var(--section-height); 
     border-radius: var(--rounded-corner);
 }
@@ -45,10 +56,10 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white;
 }
 
 .with-eyebrow {
-    font-size: 3rem;
     margin-bottom: 0;
 }
 
