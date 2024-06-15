@@ -9,8 +9,58 @@
     --rounded-corner: 2rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    display: grid;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.split-column {
+    grid-template-columns: 1fr 1fr;
+}
+
+.info-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.img-wrapper {
+
+}
+
+#mission .stage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("/img/tennis-5018589_1280.jpg");
+    min-height: var(--section-height); 
+    border-radius: var(--rounded-corner);
+}
+
+#mission .stage .stage-info {
+    grid-column: 2/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.with-eyebrow {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.with-eyebrow span {
+    display: block;
+    font-size: 40%;
+    margin-bottom: .5rem;
+}
+
 img {
     width: 100%;
+    border-radius: var(--rounded-corner);
 }
 
 nav, main {
@@ -48,10 +98,6 @@ nav ul li a:focus {
     display: flex;
 }
 
-.stage {
-    background-image: url("/img/tennis-5018589_1280.jpg");
-    min-height: var(--section-height); 
-}
 
 footer {
     min-height: 120px;
